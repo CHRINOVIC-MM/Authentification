@@ -13,6 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.authentification.R
 import com.example.authentification.components.HeadingTextComponent
+import com.example.authentification.components.MyTextFieldComponent
 import com.example.authentification.components.NormalTextComponent
 
 
@@ -27,6 +28,7 @@ fun SignUpScreen () {
         Column(modifier = Modifier.fillMaxSize()) {
             NormalTextComponent(value = stringResource(id = R.string.hello))
             HeadingTextComponent(value = stringResource(id = R.string.indication_signup))
+            MyTextFieldComponent(labelValue = stringResource(id = R.string.first_name))
         }
     }
 }
